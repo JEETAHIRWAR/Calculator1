@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" class="calculator-input" id="inputBox" readonly>
+        <div class="calculator-buttons">
+            <button onclick="appendToDisplay('+')"><i class="fas fa-plus"></i></button>
+            <button onclick="appendToDisplay('-')"><i class="fas fa-minus"></i></button>
+            <button onclick="appendToDisplay('*')"><i class="fas fa-times"></i></button>
+            <button onclick="appendToDisplay('/')"><i class="fas fa-divide"></i></button>
+            <button onclick="appendToDisplay('%')"><i class="fas fa-percent"></i></button>
+            <button onclick="calculate()"><i class="fas fa-equals"></i></button>
+            <button onclick="clearInput()">AC</button>
+            <button onclick="deleteLastCharacter()">DEL</button>
+        </div>
+        <div class="circle-container">
+            <button class="btn" onclick="appendToDisplay('0')">
+                <p id="a">0</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('1')">
+                <p id="b">1</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('2')">
+                <p id="c">2</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('3')">
+                <p id="d">3</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('4')">
+                <p id="e">4</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('5')">
+                <p id="f">5</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('6')">
+                <p id="g">6</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('7')">
+                <p id="h">7</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('8')">
+                <p id="i">8</p>
+            </button>
+            <button class="btn" onclick="appendToDisplay('9')">
+                <p id="j">9</p>
+            </button>
+            <div class="Calculator_icon">
+                <img src="Calculator_icon.png" class="Calculator_icon" alt="Icon Description">
+            </div>
+        </div>
+        <div class="bottom-buttons">
+            <button class="bottom-left-button">❤️ ||Happy Coding</button>
+            <button class="bottom-right-button" id="showMaker">⚠️ Don't Click</button>
+        </div>
+        <div class="website-maker-container" style="display: none;" align="center">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p align="center"> <a href="https://twitter.com/jeetahirwar007" target="blank"><img
+                        src="https://img.shields.io/twitter/follow/jeetahirwar007?logo=twitter&style=for-the-badge"
+                        alt="jeetahirwar007" /></a> </p>
+            <p align="center">
+                <a href="https://github.com/JEET00007" target="_blank">
+                    <img src="https://img.shields.io/github/followers/JEET00007?label=JEET00007&style=for-the-badge&logo=github"
+                        alt="JEET00007" />
+                </a>
+            </p>
+
+
+            <p class="text1"> Mujhe Pata The Aapko Maths Nhi Aati hai 😂😂</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

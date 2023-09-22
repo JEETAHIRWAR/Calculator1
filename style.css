@@ -1,0 +1,251 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bgimage.jpeg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+    background-size: cover; /* Adjust as needed to control image sizing */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background fixed as the content scrolls */
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator-input {
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: right;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgba(36, 211, 255, 0.781);
+}
+
+
+.Calculator_icon {
+    max-width: 25%;
+    max-height: auto;
+    text-align: center;
+}
+
+.calculator-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.calculator-buttons button {
+    box-shadow: 2px 2px 5px 1px rgba(255, 71, 71, 0.9);
+    width: auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #016A70;
+    color: #ffffff;
+    transition: background-color 0.3s;
+    font-weight: 900;
+}
+
+.calculator-buttons button:hover {
+    background-color: #FF6969;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.circle-container .btn {
+    box-shadow: 0 0 10px rgb(36, 167, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0A4D68;
+    color: #ffffff;
+    border: none;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+}
+
+
+.circle-container .btn:nth-child(1) {
+    transform: translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(2) {
+    transform: rotate(36deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(3) {
+    transform: rotate(72deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(4) {
+    transform: rotate(108deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(5) {
+    transform: rotate(144deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(6) {
+    transform: rotate(180deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(7) {
+    transform: rotate(216deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(8) {
+    transform: rotate(252deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(9) {
+    transform: rotate(288deg) translate(0, -120px);
+}
+
+.circle-container .btn:nth-child(10) {
+    transform: rotate(324deg) translate(0, -120px);
+}
+
+.circle-container .btn:hover {
+    background-color: #EA5455;
+}
+
+/* Rotate the <p> elements by 90 degrees */
+.circle-container .btn p {
+    transform-origin: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -100%) rotate(-250deg);
+}
+
+#a {
+    transform: translate(-50%, -120%) rotate(0deg);
+
+}
+
+#b {
+    transform: translate(-50%, -120%) rotate(-35deg);
+
+}
+
+#c {
+    transform: translate(-50%, -120%) rotate(-75deg);
+
+}
+
+#d {
+    transform: translate(-50%, -120%) rotate(-105deg);
+
+}
+
+#e {
+    transform: translate(-50%, -120%) rotate(215deg);
+
+}
+
+#f {
+    transform: translate(-50%, -120%) rotate(175deg);
+
+}
+
+#g {
+    transform: translate(-50%, -120%) rotate(145deg);
+
+}
+
+#h {
+    transform: translate(-50%, -120%) rotate(104deg);
+
+}
+
+#i {
+    transform: translate(-50%, -120%) rotate(70deg);
+
+}
+
+#j {
+    transform: translate(-50%, -120%) rotate(35deg);
+
+}
+
+/* ... (existing code) ... */
+
+.hide-content-button.left-button {
+    margin-right: auto;
+}
+
+.hide-content-button.right-button {
+    margin-left: auto;
+}
+
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15%;
+    width: 70%;
+}
+
+.bottom-right-button {
+    padding: 10px 20px;
+    background-color: #45056f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bottom-right-button:hover {
+    background-color: #bf0000;
+}
+
+.bottom-left-button, .text1{
+    color: #0A4D68;
+    background-color: rgba(245, 245, 220, 0.8);
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: monospace;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
